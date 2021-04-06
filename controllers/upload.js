@@ -9,7 +9,7 @@ const uploadFile = async (req, res) => {
       return res.send(`You must select a file.`);
     }
 
-    return res.send(`File has been uploaded.`);
+     res.render('login', { title: "login" });
   } catch (error) {
     console.log(error);
     return res.send(`Error when trying upload image: ${error}`);
